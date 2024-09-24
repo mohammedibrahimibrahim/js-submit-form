@@ -1,0 +1,334 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container1{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(pit.gif);
+}
+.container1 img{
+    display: flex;
+    width: 35%;
+    height: 70vh;
+    margin: auto;
+    border-radius: 30px;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    /* background-image: linear-gradient(rgb(171, 190, 241),rgb(51, 2, 61)); */
+    box-shadow:  10px 2px 15px 8px rgb(142, 133, 145) ;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 50px;
+    width: 35%;
+    align-items: center;
+    background-color: #dcdcdf;
+    
+}
+.box1 h1{
+    text-align: center;
+    margin: auto;
+    color: black;
+
+    
+}
+.box1 input{
+    align-items: center;
+    margin: 10px;
+    width: 70%;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid black;
+    padding: 5px;
+    outline: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group.success input {
+    border-color: #28a745;
+}
+.form-group.error input {
+    border-color: #dc3545;
+}
+.form-group i {
+    position: absolute;
+    right: 155px;
+    top: 150px;
+    visibility: hidden;
+    position: fixed;
+}
+.form-group.success i.fa-check-circle {
+    color: #28a745;
+    visibility: visible;
+}
+.form-group.error i.fa-exclamation-circle {
+    color: #dc3545;
+    visibility: visible;
+}
+.form-group small {
+    color: #dc3545;
+    visibility: hidden;
+}
+.form-group.error small {
+    visibility: visible;
+}
+#btn{
+    width: 27%;
+    height: 5vh;
+    background-color: rgb(40, 27, 44);
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-right: auto;
+    margin-left: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background-color: rgb(66, 2, 68);
+    border: 1px solid black;
+}
+#btn1{
+    width: 27%;
+    height: 5vh;
+    background-color: rgb(46, 30, 48);
+    border: none;
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 60%;
+    margin-top: -8%;
+    color: white;
+    position: relative;
+}
+#btn1:hover{
+    background-color: rgb(41, 2, 63);
+    border: 1px solid black;
+}
+@media(max-width:1075px){
+    .box1 {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+        /* background-image: linear-gradient(rgb(171, 190, 241), rgb(51, 2, 61)); */
+        box-shadow: 10px 2px 15px 8px rgb(142, 133, 145);
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 38px;
+        width: 41%;
+        align-items: center;
+        background-color: #dcdcdf;
+    }
+    .container1 img {
+        display: flex;
+        width: 41%;
+        height: 70vh;
+        margin: auto;
+        border-radius: 30px;
+    }
+    .form-group i {
+        position: absolute;
+        right: 89px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:1050px){
+    .box1{
+        width: 43%;
+    }
+    .container1 img {
+        display: flex;
+        width: 41%;
+        height: 70vh;
+        margin: auto;
+        border-radius: 30px;
+    }
+}   
+@media(max-width:1000px){
+    .box1 {
+        width: 44%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 78px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:950px){
+    .box1 {
+        width: 47%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 63px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:900px){
+    .box1 {
+        width: 50%;
+    }
+    
+}
+@media(max-width:850px){
+    .container1 img{
+        display: none;
+    }
+    .box1{
+        display: flex;
+        align-items: center;
+    }
+    .form-group i {
+        position: absolute;
+        right: 253px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:800px){
+    .box1 {
+        width: 57%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 198px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:750px){
+    .box1 {
+        width: 61%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 172px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:700px){
+    .box1 {
+        width: 65%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 149px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:650px){
+    .box1 {
+        width: 70%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 122px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:600px){
+    .box1 {
+        width: 77%;
+        padding: 39px;
+    }
+    .form-group i {
+        position: absolute;
+        right: 105px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:550px){
+    .box1 {
+        width: 80%;
+        padding: 37px;
+    }
+    .form-group i {
+        position: absolute;
+        right: 85px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:500px){
+    .box1 {
+        width: 85%;
+        padding: 33px;
+    }
+    .form-group i {
+        position: absolute;
+        right: 54px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:450px){
+    .box1 {
+        width: 92%;
+        padding: 23px;
+    }
+}
+@media(max-width:400px){
+    .box1 {
+        width: 94%;
+        padding: 25px;
+    }
+    .form-group i {
+        position: absolute;
+        right: 33px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
+@media(max-width:350px){
+    .box1 {
+        width: 97%;
+        padding: 15px;
+    }
+    #btn1 {
+        margin-top: -10%;
+    }
+    .form-group i {
+        position: absolute;
+        right: 23px;
+        top: 114px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
